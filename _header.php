@@ -1,4 +1,5 @@
-<?php 
+<?php
+    
     $reqNoms = $bd->prepare("SELECT name FROM categories");
     $reqNoms->execute();
 ?>

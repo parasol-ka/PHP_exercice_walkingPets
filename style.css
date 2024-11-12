@@ -1,14 +1,23 @@
-#animaux_affichage{ display: flex; flex-wrap: wrap; row-gap: 2vw;}
-#animal{ flex: 15%; display: flex; padding : 1vw; transition: all 0.3s; justify-content: center; align-items: flex-start;}
+#animaux_affichage{ display: flex; flex-wrap: wrap; row-gap: 2vw; }
+#animal{ color: white; text-decoration: none; flex: 15%; display: flex; padding : 1vw; transition: all 0.3s; justify-content: center; align-items: flex-start;}
 #animal figure {width: 45%; margin: 0;}
 #animal figure img {width: 90%;}
 #animal_description {flex-flow: column, nowrap;}
-#animal_description p {margin: 0;}
+#animal_description p {margin: 0; color: white; text-decoration: none;}
 header {display:flex; flex-direction: column; align-items: center;}
 header h1 {margin: 0;}
 header p {text-align: center;}
 body {background-color: #222233; color: white; font-family: Calibri;}
 
-#animal:hover {
-    background-color: orange;
-}
+#animal:hover {background-color: orange;}
+
+#update_form_box {display: flex; flex-direction: column ; align-items: center; }
+#update_form_box h2 {margin-top: 0;}
+#update_form_box>* {margin-bottom: 5%;}
+#update_form {display: flex; flex-direction: column; align-items: center;}
+#form_img {width: 5%;}
+.form_element input:not(#comment) {width: 7vw;}
+.form_element {text-align: center; margin-bottom: 5%;}
+
+#animaux_affichage .recent_modif p {color: yellow;}
+
